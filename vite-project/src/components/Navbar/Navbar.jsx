@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import { logo } from "../../assets/img";
+import { logo } from "../../img";
 
 const Navbar = ({ displayNav }) => {
   const handleLogout = () => {

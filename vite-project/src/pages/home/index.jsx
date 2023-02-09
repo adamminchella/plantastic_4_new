@@ -206,7 +206,7 @@ const Wrapper = styled.div`
 import React, { Suspense, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Environment, Html, Stats } from "@react-three/drei";
-import Model from "./House2";
+import Model from "./House3";
 import annotations from "./annotations.json";
 import "./index.css";
 import styled from "styled-components";

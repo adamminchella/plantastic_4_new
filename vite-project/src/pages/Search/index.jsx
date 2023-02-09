@@ -59,7 +59,7 @@ const Search = () => {
               </div>
             </>
           )}
-          <h2>
+          <h2 id="identifier-h2">
             Can't find the plant you are looking for? <br></br>
             <br></br>Upload a photo and we will tell you the species
             <br />

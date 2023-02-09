@@ -66,9 +66,16 @@
 }
 
 .search-info {
-  padding-left: 35px;
+  border-top: 2px solid var(--plantwhite);
+  /* padding-left: 35px; */
 }
 
 .search-plant-result:hover {
   color: var(--plantdarkgreen);
+  cursor: pointer;
+}
+
+#identifier-h2 {
+  padding-top: 20px;
+  border-top: 2px solid var(--plantwhite);
 }

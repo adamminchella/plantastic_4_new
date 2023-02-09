@@ -45,7 +45,7 @@ const SearchBar = ({ loadResults }) => {
           />
           <img
             className="search-icon"
-            src="src/assets/img/search-icon.png"
+            src="src/assets/images/search-icon.png"
             alt="search icon"
           />
         </div>

@@ -181,7 +181,7 @@ main {
   /* border: 50px solid #855e42; */
   margin-bottom: 0px;
   display: block;
-  content: url("../../assets/img/plantshelf.png");
+  content: url("../../assets/images/plantshelf.png");
   position: relative;
   width: 250px;
   object-fit: cover;

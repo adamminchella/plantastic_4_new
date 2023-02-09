@@ -6,7 +6,11 @@ const SearchPlant = ({ handleClick, plant }) => {
   return (
     <>
       <article>
-        <h2 className="search-plant-result" onClick={() => handleClick(plant)}>
+        <h2
+          className="search-plant-result"
+          id="search-result"
+          onClick={() => handleClick(plant)}
+        >
           {plant.names
             .replace("{", "")
             .replace("}", "")

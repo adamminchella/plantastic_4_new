@@ -1,8 +1,21 @@
 import React, { useRef } from "react";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 
+const getfile = (myfile) => {
+  fetch(myfile, {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Content-Type",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+    },
+  });
+};
+
+const file = getfile("https://miznauppal.b-cdn.net/final.glb");
+useGLTF.preload(file);
+
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/final.glb");
+  const { nodes, materials } = useGLTF(file);
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -2076,6 +2089,5 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/final.glb");
 // git lfs migrate import --include="*.framework"
 // https://miznauppal.b-cdn.net/final.glb

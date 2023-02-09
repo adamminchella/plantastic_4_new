@@ -40,7 +40,7 @@ import {
   image66,
   image67,
   image68,
-} from "../../img";
+} from "../../images";
 
 const AvatarSelection = () => {
   const dispatch = useDispatch();

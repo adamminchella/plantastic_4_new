@@ -2,9 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF(
-    "https://miznauppal.b-cdn.net/final.glb"
-  );
+  const { nodes, materials } = useGLTF("/final.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -2078,6 +2076,6 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("https://miznauppal.b-cdn.net/final.glb");
+useGLTF.preload("/final.glb");
 // git lfs migrate import --include="*.framework"
 // https://miznauppal.b-cdn.net/final.glb
